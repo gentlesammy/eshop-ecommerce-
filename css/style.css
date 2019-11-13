@@ -1,0 +1,959 @@
+
+/*
+primary color: #1C9CC6;
+bg1: #FBFBFB; 
+bg1: #C8EEF5
+secondary: #870A30
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+/*
+    general styling for all pages
+*/
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --color1: #1C9CC6;
+    --color2:   #870A30; 
+    --bg1: #FBFBFB; 
+    --bg2: #C8EEF5; 
+}
+/*#1C9CC6
+    tophead styling goes here
+*/
+#topmost{
+    margin:0;
+    padding:0; 
+    padding:10px 0px; 
+    background: var(--color2); 
+}
+#topmost p, #topmost a{
+    font-weight: 12px; color:white;
+    margin-bottom: 0px;
+    font-weight:600;
+}
+#topmost a:hover{
+    color: var(--bg1);
+    font-weight: 900;
+}
+/*
+    header section begins here
+*/
+#headertop{
+    min-height: 100vh;
+    background:url('../img/reenzabg1.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#headertop .boxholder .lineone{
+    padding-top:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#headertop .boxholder .lineone .fa{
+    font-size:24px;
+    color:var(--color2);
+    margin: 0px 5px;
+}
+#headertop .boxholder .lineone .fa-shopping-cart{
+    cursor: pointer;
+}
+#headertop .boxholder .sitename a{
+    color:white;
+    font-weight: 900;
+    color:white;
+    font-size: 42px;
+    text-shadow: 2px 2px 4px var(--color2);
+    transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+} 
+#headertop .boxholder .sitename a:hover{
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+#headertop .boxholder .linetwo a{
+    font-size:24px;
+    color:white;
+    font-weight:600;
+}
+#headertop .boxholder .linetwo a:hover{
+  text-decoration:none;
+  text-shadow: 2px 2px 4px var(--color2);
+}
+#headertop .boxholder .linethree{
+    max-width:50%;
+    margin-top:120px;
+    
+}
+#headertop .boxholder .linethree h1{
+    font-weight:900;
+    font-size:2.6em;
+    line-height: 1.5em;
+    color:white;
+}
+
+#headertop .boxholder .linefour{
+  margin-top: 20px;
+}
+
+
+
+
+/*
+    latest products section
+*/
+
+.latestproducts{
+    min-height:100vh;
+    background:var(--bg2);
+}
+
+
+.latestproducts .mainbox h2{
+    color: var(--color2);
+    font-weight:900;
+}
+.latestproducts .mainbox p{
+    color: var(--color2);
+    font-weight:bold;
+}
+
+.latestproducts .mainbox .productbox{
+    display:flex;
+    margin-top:20px;
+    padding:70px 20px;
+    background: var(--bg1);
+    -webkit-box-shadow: 3px 3px 4px 6px rgba(0, 0, 0, .1);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 4px 6px rgba(0, 0, 0, .1);  /* Firefox 3.5 - 3.6 */
+    box-shadow:   3px 3px 5px 6px rgba(0, 0, 0, .1); 
+}
+
+.latestproducts .mainbox .productbox .box{
+    padding: 20px 10px;
+    text-align:left;
+    position:relative;
+    border: 2px solid white;
+    margin:1px 0px;
+    flex:1;
+}
+.latestproducts .mainbox .productbox .box .imagebox{
+    padding:5px;
+    background-color: whitesmoke;
+    object-fit: fill;
+    object-position: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.latestproducts .mainbox .productbox .box .detailbox {
+    line-height: 2.2em;
+    color:var(--color2);
+    font-weight: bold;
+}
+
+.latestproducts .mainbox .productbox .box  .hiddendetails{
+    line-height: 2em;
+}
+.latestproducts .mainbox .productbox .box  .hiddendetails .iconparts{
+    display: flex;
+    flex-direction: row;
+}
+.latestproducts .mainbox .productbox .box  .hiddendetails .fa{
+    font-size:1.5em;
+    color:var(--color1);
+    cursor: pointer;
+    flex:1;
+    border: 1px solid var(--bg2);
+    padding:10px;
+    text-align:center;
+    transition: .5s all ease-in;
+    border-radius:5%;
+    margin-top: 20px;
+}
+.latestproducts .mainbox .productbox .box  .hiddendetails .fa:first-child{
+    border: 1px solid var(--color2);
+    color: var(--color2);
+    margin-right:5px;
+}
+.latestproducts .mainbox .productbox .box  .hiddendetails .fa:hover{
+    background: var(--bg1);
+    font-weight:900;
+}
+
+
+/*
+    single product detail
+*/
+.singleproductnodal{
+    position: fixed;
+    height:100vh;
+    width:100%;
+    background: white;
+    z-index:100;
+    top:0;
+    left:0;
+    display:none;
+    transition: 25s all ease-in;
+}
+.singleproductnodal #closespmodal{
+    position:absolute;
+    top:20px;
+    right:100px;
+}
+
+.lastdetail{
+    display:flex;
+    justify-content: space-between;
+}
+
+.open-modal{
+    display:block !important;
+    transition: .5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*
+    why us section goes here
+*/
+
+#whyus{
+    padding:50px 0px;
+}
+
+#whyus .container{
+    background:var(--bg1);
+    padding:20px;
+
+}
+
+#whyus .container  .heading{
+    text-align:center;
+    margin:20px;
+}
+
+#whyus .container  .heading h2{
+    font-weight:900;
+    color:var(--color2);
+}
+
+#whyus .container  .whyusbox{
+    display:flex;
+    flex-direction: row;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#whyus .container  .whyusbox .box{
+    flex:1;
+    border:1px solid var(--bg2);
+    margin:5px;
+    padding:5px;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    transition: 1s all ease-in-out;
+}
+#whyus .container  .whyusbox .box:hover{
+    background:white;
+}
+
+#whyus .container  .whyusbox .box .icon{
+    width: 50px;
+    height:50px;
+    border-radius:50%;
+    background:var(--bg2);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+
+#whyus .container  .whyusbox .box .icon .fa{
+    font-size: 18px;
+    color:var(--color2);
+    font-weight: 900;
+}
+
+#whyus .container  .whyusbox .box .words .head{
+    font-size: 1.2em;
+    font-weight:600;
+    color:var(--color2);
+}
+
+/*
+combo section styling begins here
+*/ 
+#promopck{
+    background:black;
+}
+
+#promopck .container .boxholder{
+    display:flex;
+}
+#promopck .container .boxholder .imagepart{
+    flex:1;
+}
+
+#promopck .container .boxholder .textplace{
+    flex:1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:1.5em;
+}
+#promopck .container .boxholder .textplace p{
+    margin:20px;
+}
+#promopck .container .boxholder .textplace h2{
+    margin: 10px 0px;
+    font-weight: 900;
+    font-size: 3.5em;
+    color:var(--color1);
+}
+#promopck .container .boxholder .textplace .btn{
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+
+
+/*
+best selling products section styling
+*/
+#bestselling{
+    min-height: 100vh;
+    background:var(--bg2);
+}
+
+#bestselling .container{
+    padding: 50px 20px;
+}
+
+#bestselling .container h2{
+    text-align: center;
+    font-weight: 900;
+    padding:20px;
+    color:var(--color2);
+}
+
+#bestselling .container .bestsellingbox{
+    display:flex;
+}
+#bestselling .container .bestsellingbox .box{
+    border:1px solid var(--bg2);
+    position: relative;
+}
+
+#bestselling .container .bestsellingbox .box:first-child{
+    margin-right:20px;
+}
+#bestselling .container .bestsellingbox .box:nth-child(2){
+    margin-left:20px;
+}
+#bestselling .container .bestsellingbox .box .imgcontainer{
+    margin-bottom: 20px;
+}
+#bestselling .container .bestsellingbox .box .detail{
+    padding-left:20px;
+}
+#bestselling .container .bestsellingbox .box .detail .productname{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:var(--color1);
+}
+
+#bestselling .container .bestsellingbox .box .detail .price{
+    font-size: 1.1em;
+    font-weight:300;
+    color:var(--color2);
+}
+
+#bestselling .container .bestsellingbox .box .hiddendetails{
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:rgba(250, 250, 250, 0.2);
+    z-index: 23;
+    display:flex;
+    flex-direction:row;
+    min-width:50%;
+    justify-content: space-between;
+    padding:20px 10px; 
+    opacity: 0;
+    transition: all .4s ease-in;
+}
+
+#bestselling .container .bestsellingbox .box .hiddendetails .fa{
+    padding:20px;
+    background:white;
+    width:100%;
+    height:100%;
+    margin-right:10px;
+    color:var(--color2);
+    font-weight:600;
+    cursor:pointer;
+  
+}
+
+ .showhiddendetails{
+    position:relative;
+    top:3px;
+    height:100%;
+}
+
+#bestselling .container .bestsellingbox .box:hover .hiddendetails{
+    opacity: 1;
+}
+
+#footer{
+    padding-top: 50px;
+    background: var(--bg1);
+}
+
+#footer .container .falsefooter{
+    display:flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer .container .falsefooter .box{
+    flex:1;
+}
+#footer .container .falsefooter .box:nth-child(2){
+    margin:0 20px;
+    text-align: center;
+}
+#footer .container .falsefooter .box:nth-child(3){
+    text-align: right;
+}
+
+#footer .copyrightsection{
+    background: var(--color2);
+    padding-top:30px;
+    padding-bottom: 10px;
+    color:white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg1);
+    z-index:99;
+    left:0;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding: 0px 10%;
+    transition:1s all ease;
+  }
+
+/*
+    #############################################################
+        media querries for home page
+    ############################################################
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    #headertop{
+        min-height: 100%;
+        background:url('../img/reenzabg1.jpg'); 
+        background-size: cover;
+        background-position: center right;
+        background-attachment: fixed;
+        position: relative;
+    }
+    #headertop .container{
+        background: rgba(0, 0, 0, .3);
+        height:100%;
+        padding-bottom:50px;
+    }
+    
+    #headertop .boxholder .lineone{
+        padding-top:30px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #headertop .boxholder .lineone .fa{
+        font-size:18px;
+        color:var(--bg1);
+        margin: 0px 5px;
+    }
+
+    #headertop .boxholder .lineone .sociallinks{
+        display:none;
+    }
+ 
+    #headertop .boxholder .sitename a{
+        color:white;
+        font-weight: 600;
+        color:white;
+        font-size: 32px;
+        text-shadow: 0px 0px 1px var(--color2);
+        transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+    } 
+    #headertop .boxholder .linetwo a{
+        display:none;
+    }
+    #headertop .boxholder .linetwo a:hover{
+      text-decoration:none;
+      text-shadow: 2px 2px 4px var(--color2);
+    }
+    #headertop .boxholder .linethree{
+        max-width:90%;
+        margin-top:100px; 
+    }
+    #headertop .boxholder .linethree h1{
+        font-weight:900;
+        font-size:1.7em;
+        line-height: 1.5em;
+        color:white;
+    }
+    
+    #headertop .boxholder .linefour{
+      margin-top: 20px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: var(--color2);
+        z-index:99;
+        left:0;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding: 0px 10%;
+        transition:1s all ease;
+      }
+    /*  latest products  */
+
+    .latestproducts{
+        min-height:100%;
+        background:var(--bg2);
+    }
+    
+    
+    .latestproducts .mainbox h2{
+        color: var(--color2);
+        font-weight:600;
+    }
+    .latestproducts .mainbox p{
+        color: var(--color2);
+        font-weight:bold;
+    }
+    
+    .latestproducts .mainbox .productbox{
+        display:flex;
+        flex-direction:column;
+        margin-top:10px;
+        padding:10px 5px;
+        background: var(--bg1);
+        -webkit-box-shadow: 3px 3px 4px 6px rgba(0, 0, 0, .1);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow:    3px 3px 4px 6px rgba(0, 0, 0, .1);  /* Firefox 3.5 - 3.6 */
+        box-shadow:   3px 3px 5px 6px rgba(0, 0, 0, .1); 
+    }
+    
+    .latestproducts .mainbox .productbox .box{
+        padding: 20px 10px;
+        text-align:left;
+        position:relative;
+        border: 2px solid white;
+        margin:1px 0px;
+        flex:1;
+    }
+    .latestproducts .mainbox .productbox .box .imagebox{
+        padding:5px;
+        background-color: whitesmoke;
+        object-fit: fill;
+        object-position: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .latestproducts .mainbox .productbox .box .detailbox {
+        line-height: 2.2em;
+        color:var(--color2);
+        font-weight: bold;
+    }
+    
+    .latestproducts .mainbox .productbox .box  .hiddendetails{
+        line-height: 2em;
+    }
+    .latestproducts .mainbox .productbox .box  .hiddendetails .iconparts{
+        display: flex;
+        flex-direction: row;
+    }
+    .latestproducts .mainbox .productbox .box  .hiddendetails .fa{
+        font-size:1.5em;
+        color:var(--color1);
+        cursor: pointer;
+        flex:1;
+        border: 1px solid var(--bg2);
+        padding:10px;
+        text-align:center;
+        transition: .5s all ease-in;
+        border-radius:5%;
+        margin-top: 20px;
+    }
+    .latestproducts .mainbox .productbox .box  .hiddendetails .fa:first-child{
+        border: 1px solid var(--color2);
+        color: var(--color2);
+        margin-right:5px;
+    }
+    .latestproducts .mainbox .productbox .box  .hiddendetails .fa:hover{
+        background: var(--bg1);
+        font-weight:900;
+    }
+
+    /* why us section */
+    #whyus{
+        padding:10px 0px;
+    }
+    
+    #whyus .container{
+        background:var(--bg1);
+        padding:20px;
+    
+    }
+    
+    #whyus .container  .heading{
+        text-align:center;
+        margin:20px;
+    }
+    
+    
+    #whyus .container  .whyusbox{
+        display:flex;
+        flex-direction: column;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    
+   /*
+        combo section
+   */
+   #promopck .container .boxholder{
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+
+/* best sellers  */
+#bestselling .container .bestsellingbox{
+    display:flex;
+    flex-direction: column;
+}
+
+#bestselling .container .bestsellingbox .box:first-child{
+    margin-right:0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--bg1);
+}
+#bestselling .container .bestsellingbox .box:nth-child(2){
+    margin-left:0px;
+    margin-top: 20px;
+}
+
+#bestselling .container .bestsellingbox .box .hiddendetails{
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:rgba(250, 250, 250, 0.2);
+    z-index: 23;
+    display:flex;
+    flex-direction:row;
+    min-width:50%;
+    justify-content: space-between;
+    padding:20px 5px; 
+    opacity: 0;
+    transition: all .4s ease-in;
+}
+
+#bestselling .container .bestsellingbox .box .hiddendetails .fa{
+    padding:10px;
+}
+
+/*  footer section */
+#footer .container .falsefooter{
+   flex-direction: column;
+}
+
+#footer .container .falsefooter .box{
+    flex:1;
+}
+#footer .container .falsefooter .box:nth-child(2){
+    text-align: center;
+}
+#footer .container .falsefooter .box:nth-child(3){
+    text-align: center;
+}
+
+#footer .copyrightsection{
+    background: var(--color2);
+    padding-top:30px;
+    padding-bottom: 10px;
+    color:white;
+    margin-top: 20px;
+}
+
+
+
+
+    
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) AND (max-width:992px){ 
+
+    #headertop{
+        min-height: 100%;
+        background:url('../img/reenzabg1.jpg'); 
+        background-size: cover;
+        background-position: center right;
+        background-attachment: fixed;
+        position: relative;
+    }
+    #headertop .container{
+        background: rgba(0, 0, 0, .3);
+        height:100%;
+        padding-bottom:50px;
+    }
+    
+    #headertop .boxholder .lineone{
+        padding-top:30px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #headertop .boxholder .lineone .fa{
+        font-size:18px;
+        color:var(--bg1);
+        margin: 0px 5px;
+    }
+
+    #headertop .boxholder .lineone .sociallinks{
+        display:block;
+    }
+ 
+    #headertop .boxholder .sitename a{
+        color:white;
+        font-weight: 900;
+        color:white;
+        font-size: 42px;
+        text-shadow: 0px 0px 1px var(--color2);
+        transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+    } 
+    #headertop .boxholder .linetwo a{
+        display:none;
+    }
+    #headertop .boxholder .linetwo a:hover{
+      text-decoration:none;
+      text-shadow: 2px 2px 4px var(--color2);
+    }
+    #headertop .boxholder .linethree{
+        max-width:90%;
+        margin-top:100px; 
+    }
+    #headertop .boxholder .linethree h1{
+        font-weight:900;
+        font-size:1.7em;
+        line-height: 1.5em;
+        color:white;
+    }
+    
+    #headertop .boxholder .linefour{
+      margin-top: 20px;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: var(--color2);
+        z-index:99;
+        left:0;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding: 0px 10%;
+        transition:1s all ease;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+
+
+ /*
+        ########################################################################
+            shop page styling starts here
+        ########################################################################
+ */
+
+ #shophead{
+     min-height:100vh;
+     background: url('../img/ree3.jpg');
+     background-size: cover;
+     background-position: center center;
+     padding-top:20vh;
+ }
+
+ #shophead .boxholder .lineone{
+    padding-top:30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ #shophead .boxholder .lineone .fa{
+    font-size:24px;
+    color:var(--color2);
+    margin: 0px 5px;
+}
+#shophead .boxholder .lineone .fa-shopping-cart{
+    cursor: pointer;
+}
+#shophead .boxholder .sitename a{
+    color:white;
+    font-weight: 900;
+    color:white;
+    font-size: 42px;
+    text-shadow: 2px 2px 4px var(--color2);
+    transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+} 
+#shophead .boxholder .sitename a:hover{
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#shophead .boxholder .pageheading{
+    margin-top:30vh;
+    background:rgba(250, 250, 250, .2);
+}
+#shophead .boxholder .pageheading h1{
+    margin: auto;
+    width: 50%;
+    font-weight: 900;
+    font-size: 1.7em;
+    color:var(--color2);
+    padding: 20px 0px;
+    
+    }
+#shophead .boxholder .pageheading p{
+    font-size:1.2em;
+    font-weight: bold;
+    color:var(--color2);
+}
+
+
+/*
+    product box shop section
+*/
+
+#productshop{
+    min-height: 100vh;
+    display: flex;
+
+}
+
+
+
+/*
+    #################################################################
+        shop page media styling
+    #################################################################
+*/
+
+@media (max-width: 576px){
+    #shophead .boxholder .lineone .sociallinks{
+        display:none;
+    }
+
+    #shophead .boxholder .pageheading h1{
+        margin: auto;
+        width: 90%;
+        font-weight: 900;
+        font-size: 1.7em;
+        color:var(--color2);
+        padding: 20px 0px;
+        }
+
+        #shophead .boxholder .icons .fa{
+            color:white;
+        }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

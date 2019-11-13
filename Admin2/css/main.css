@@ -1,0 +1,200 @@
+
+
+:root{
+    --color1: #1C9CC6;
+    --color2:   #870A30; 
+    --bg1: #FBFBFB; 
+    --bg2: #C8EEF5; 
+}
+
+
+*{
+    padding:0;
+    margin:0; 
+}
+
+
+.adminhead{
+    height:50px;
+    background: var(--bg2);
+}
+
+.adminhead .nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100%;
+}
+.nav-icon div {
+    margin: 1em;
+    width: 30px;
+  }
+  
+  .nav-icon div{
+    background-color: var(--color2);
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 2px 0;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .adminhead .nav  .logo-part a{
+      font-weight:600;
+      color: var(--color2);
+      font-size: 1.5em;
+  }
+  .adminhead .nav  .logo-part a:hover{
+      text-decoration: none;
+  }
+  .adminhead .nav .iconpart .fa, .adminhead .nav .iconpart .fa a{
+    color: var(--color2);
+    font-weight: var(--color2);
+    margin-right:2px;
+    cursor: pointer;
+  }
+
+  .adminhead .sidebar{
+    z-index: 1000;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    padding-bottom:50px;
+    overflow-y: auto;
+    background: black;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .adminhead .showsidebar{
+    left:250px;
+  }
+
+
+
+
+
+  .adminhead .sidebar::-webkit-scrollbar{
+      background: var(--color2);
+      width:10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+  .sidebar .header {
+    background-color: #263238;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
+    position:relative;
+  }
+  .sidebar .header .btn{
+      position: absolute;
+      right: 8px;
+      top:8px;
+  }
+  
+  .sidebar .header a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .sidebar .header a:hover {
+    color: #fff;
+  }
+
+  .sidebar .navarae .navparent .nav-title{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      color:white;
+      background:black;
+      padding: 20px 10px;
+      text-transform:lowercase;
+      border-bottom: 1px solid lightgray;
+  }
+
+  .sidebar .navarae .navparent .nav-title h3{
+      text-transform: capitalize;
+      font-size: 1.2em;
+      color:gray;
+      text-align:left;
+      flex: 1;
+      margin-left:20px;
+  }
+
+  .sidebar .navarae ul{
+     display:block;
+     padding:20px 0px;
+     background: rgba(32, 32, 32, 0.5);
+     border-bottom:1px solid white;
+     display: none;
+     transition: 5s all ease-in-out;
+
+  }
+  .ulshow{
+      display:block !important;
+  }
+
+  .sidebar .navarae ul li{
+      padding-left:40px; 
+  }
+  .sidebar .navarae ul li a{
+      padding:20px 0px;
+      color:var(--color1);
+      line-height:1.8em;
+      margin: 20px 0px; 
+  }
+
+  .useraccountbox{
+    height:200px;
+    width: 150px;
+    background:var(--bg2);
+    border:var(--bg1);
+    position:absolute;
+    top:-555px;
+    right:10%;
+    z-index:50000000;
+    transition:7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .useraccountbox ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background:var(--bg2);
+    border: 1px solid #000;
+  }
+  
+  .useraccountbox li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+  }
+
+  .useraccountbox li{
+    border-bottom: 1px solid #000;
+  }
+
+  .useraccountbox li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Change the link color on hover */
+  .useraccountbox li a:hover {
+    background-color: var(--color2);
+    color: white;
+  }
+
+  .show-useraccountbox{
+    top:55px;
+  }
+
