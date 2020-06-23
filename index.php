@@ -75,8 +75,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 px-5">
-                    <h3>Product Name</h3>
-                    <h5>#500</h5>
+                    <h3>Product 101</h3>
+                    <h5>#50000</h5>
                     <p class="text-justify">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam corrupti nobis aliquid officiis, cupiditate omnis quas repellat similique numquam voluptatem obcaecati consequatur voluptas. Id impedit, soluta aliquid qui nemo harum?
                     </p>
